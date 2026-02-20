@@ -1,0 +1,229 @@
+
+#wrap{width: 100%; overflow: hidden;}
+
+/* 공통 */
+.btn_more{
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    background:#EB6317;
+    font-size: 1rem;
+    font-weight: 600;
+    padding:15px 0;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.2);
+    transition: all .5s ease-out;
+}
+.btn_more:hover{color: #EB6317; background: #fff;}
+
+/* 헤더 영역 */
+#headerArea{
+    background: rgba(255,255,255,.9);
+    box-shadow:0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+}
+#headerArea .header_inner {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#headerArea .logo{margin-top: 25px;}
+#headerArea .logo a{
+    width: 192px; 
+    height: 48px;
+    background: url(../images/logo_top.png);
+    text-indent: -999px;
+    overflow: hidden;
+ }
+#headerArea #gnb{width: 900px;}
+#headerArea #gnb ul{display: flex;}
+#headerArea #gnb ul li{width:16.66%;text-align: center;}
+#headerArea #gnb ul li a{padding: 30px 0;}
+#headerArea .top_menu{display: flex;gap: 30px;}
+#headerArea .top_menu a{padding: 30px 0;}
+
+/* 비주얼 영역 */
+.visual{width: 100%;position: relative;}
+.visual p{
+    position: absolute;
+    left: 18%;
+    top: 400px;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, .5);
+    font-weight: 600;
+}
+.visual p span{color: #EB6317;font-size: 3rem;}
+
+
+/* 본문영역 */
+
+/* 회사소개 영역 */
+.intro{padding: 100px 0;}
+.intro h3{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.intro h3 span{color: #EB6317;}
+.intro .intro_img{text-align: center;}
+.intro .intro_text{font-size: 1.5rem; text-align: center; margin-bottom:100px;}
+.intro .intro_text span{color: #EB6317;}
+.intro li{
+    width: 1400px;
+    margin:0 auto 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.intro ul li h4{font-size: 2.3rem;margin-bottom: 30px;}
+.intro ul li p{font-size: 1.3rem;margin-bottom: 30px;}
+.intro ul li p span{color: #EB6317; font-weight: 600;}
+
+
+/* 브랜드 */
+.brand{background: #EB6317;padding: 100px 0;}
+.brand h3{font-size: 3rem;
+    text-align: center; 
+    color: #fff;
+    margin-bottom:30px;}
+.brand .brand_text{font-size: 1.5rem; color: #fff; 
+    text-align: center;margin-bottom: 80px;}
+.brand ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.brand ul li{
+    width: 335px; height: 680px; 
+    border-radius: 30px;
+    overflow: hidden; position: relative;
+}
+.brand ul li div{
+   width: 335px; height: 680px; 
+   position: absolute; left:0; top:0;
+   transition: all .5s ease-out;
+}
+.brand ul li div h4{text-align: center; margin: 100px 0;transition: all .5s ease-out;}
+.brand ul li div p{font-size:1rem;opacity: 0;color: #fff ;text-align: center ;
+    margin-bottom: 30px;
+    transition: all .5s ease-out;
+}
+.brand ul li div .btn_more{margin: 0 auto; opacity: 0;transition: all .5s ease-out;}
+
+.brand ul li div:hover{background: rgba(0,0,0,.6); }
+.brand ul li div:hover h4{transform: scale(1.2);}
+.brand ul li div:hover p{opacity: 1;}
+.brand ul li div:hover .btn_more{opacity: 1;}
+
+/* 지속경역 */
+.business{padding: 100px 0;}
+.business h3{font-size: 3rem;
+    text-align: center; 
+    color: #333;
+    margin-bottom:30px;}
+.business .business_text{font-size: 1.5rem; color: #333; 
+    text-align: center;margin-bottom: 80px;}
+.business p span{color: #EB6317; font-weight: 600;}
+.business li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:150px;
+}
+.business li h4{font-size: 2.5rem;margin-bottom: 30px;}
+.business li h4 span{font-size: 1.5rem; color: #EB6317;}
+.business li p{font-size: 1.2rem; line-height: 2rem;margin-bottom: 30px;}
+
+/* News & Media 섹션 */
+.news_media{padding: 100px 0; background: #EB6317;}
+.news_media h3{font-size: 3rem;
+    text-align: center; 
+    color: #fff;
+    margin-bottom:80px;
+}
+.news_media ul{
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+.news_media li{padding: 20px; border-radius: 30px; overflow: hidden;
+     background: #fff; box-shadow: 10px 10px 10px 1px rgba(0,0,0,.3);
+}
+.news_media li img{border-radius: 30px; margin-bottom: 30px;}
+.news_media li:nth-of-type(1){width: 638px;}
+.news_media li:nth-of-type(2){width: 290px;}
+.news_media li:nth-of-type(3){width: 290px;}
+.news_media li dt{font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;}
+.news_media li dt span{font-size: 1rem; color: #EB6317; display: block;}
+.news_media li dd{line-height: 1.5rem; text-align: justify;}
+
+/* 고객지원 */
+.support{
+    width: 100%; 
+    padding: 100px 0;
+    background: url(../images/support_background.jpg) center no-repeat;
+    background-size: cover;
+}
+.support h3{font-size: 3rem;
+    text-align: center; 
+    color: #fff;
+    margin-bottom:80px;
+}
+.support ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.support ul li{
+    width: 400px; height: 400px;
+    background: #EB6317;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.support ul li a{
+    width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    text-align: center;
+    color: #fff;
+    transition: all .5s ease-out;
+}
+.support ul li a:hover{background: #fff; color: #EB6317;}
+.support ul li a span{font-size: 6rem;}
+.support ul li a h4{font-size: 2rem;}
+
+/* 푸터 영역 */
+#footerArea{
+    background: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+#footerArea .footer_inner {
+    width: 1400px;
+    margin: 0 auto;
+}
+#footerArea .footer_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #666;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+#footerArea .footer_top .bottom_menu{
+    display: flex;
+    gap: 30px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+#footerArea .footer_top .bottom_menu a{color: #fff;}
+#footerArea address{line-height: 1.5rem; margin-bottom: 20px;}
